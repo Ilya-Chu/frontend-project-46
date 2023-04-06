@@ -4,7 +4,7 @@
   "bin": {
     "gendiff": "bin/gendiff.js"
   },
-  "version": "1.0.0",
+  "version": "1.0.0", 
   "description": "[![Actions Status](https://github.com/Ilya-Chu/frontend-project-46/workflows/hexlet-check/badge.svg)](https://github.com/Ilya-Chu/frontend-project-46/actions)",
   "main": "index.js",
   "scripts": {

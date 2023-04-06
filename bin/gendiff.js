@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 
-import { program } from ("commander");
+import { Command } from 'commander';
 
-
-console.log('asd')
-
+const program = new Command;
 
 program
-  .version('1.0.0')
-  .description('Compares two configuration files and shows a difference.')
+    .version('1.0.0')
+    .description('Compares two configuration files and shows a difference.')
+;
 
 program.parse(process.argv);
