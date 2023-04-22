@@ -1,0 +1,32 @@
+{
+    "name": "@hexlet/code",
+    "type": "module",
+    "bin": {
+      "gendiff": "bin/gendiff.js"
+    },
+    "version": "1.0.0",
+    "description": "Hexlet ed project #2",
+    "main": "src/index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/Ilya-Chu/frontend-project-46.git"
+    },
+    "author": "Il_Ch",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Ilya-Chu/frontend-project-46/issues"
+    },
+    "homepage": "https://github.com/Ilya-Chu/frontend-project-46#readme",
+    "dependencies": {
+      "commander": "^10.0.0",
+      "js-yaml": "^4.1.0",
+      "lodash": "^4.17.21"
+    },
+    "devDependencies": {
+      "eslint": "^8.38.0",
+      "jest": "^29.5.0"
+    }
+  }
