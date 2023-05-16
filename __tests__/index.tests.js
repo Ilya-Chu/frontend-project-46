@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import genDiff from "../src/index.js";
 
+
 const fileExt = [".json", ".yaml"];
 
 const resultStylish = fs.readFileSync(
