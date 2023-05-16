@@ -1,32 +1,36 @@
-name: Lucas
-age: 32
-city: Seattle
-country: USA
-hobby: photography
-favorite_color: green
-is_married: true
-pets:
-  - dog
-  - cat
-favorite_food:
-  breakfast: pancakes
-  lunch: pizza
-  dinner: sushi
-  repository:
-  type: git
-  url: git+ssh://git@github.com/Ilya-Chu/frontend-project-46.git
-author: Il_Ch
-license: ISC
-bugs:
-  url: https://github.com/Ilya-Chu/frontend-project-46/issues
-job:
-  title: software engineer
-  company: Acme Inc.
-  salary: 100000
-education:
-  - degree: Bachelor of Science
-    major: Computer Science
-    university: University of California, Berkeley
-  - degree: Master of Science
-    major: Information Technology
-    university: Stanford University
+common:
+  follow: false
+  setting1: Value 1
+  setting3:
+    key: value
+  setting4: blah blah
+  setting5:
+    key5: value5
+  setting6:
+    key: value
+    ops: vops
+    doge:
+      wow: so much
+
+group1:
+  foo: bar
+  baz: bars
+  nest: str
+
+group3:
+  deep:
+    id:
+      number: 45
+  fee: 100500
+
+group4:
+  default: ""
+  foo: null
+  isNested: none
+  key: false
+  nest:
+    bar: 0
+  someKey: true
+  type: bar
+
+language: "js"

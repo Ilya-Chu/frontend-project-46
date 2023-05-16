@@ -1,65 +1,64 @@
 {
-  + age: 32
-    author: Il_Ch
-  - bin: {
-        gendiff: bin/gendiff.js
-    }
-    bugs: {
-        url: https://github.com/Ilya-Chu/frontend-project-46/issues
-    }
-  + city: Seattle
-  + country: USA
-  - dependencies: {
-        commander: ^10.0.0
-        js-yaml: ^4.1.0
-        lodash: ^4.17.21
-    }
-  - description: Hexlet ed project #2
-  - devDependencies: {
-        eslint: ^8.38.0
-        jest: ^29.5.0
-    }
-  + education: {
-        0: {
-            degree: Bachelor of Science
-            major: Computer Science
-            university: University of California, Berkeley
+    common: {
+      + follow: false
+        setting1: Value 1
+      - setting2: 200
+      - setting3: true
+      + setting3: {
+            key: value
         }
-        1: {
-            degree: Master of Science
-            major: Information Technology
-            university: Stanford University
+      + setting4: blah blah
+      + setting5: {
+            key5: value5
+        }
+        setting6: {
+            doge: {
+              - wow: too much
+              + wow: so much
+            }
+            key: value
+          + ops: vops
         }
     }
-  + favorite_color: green
-  + favorite_food: {
-        breakfast: pancakes
-        lunch: pizza
-        dinner: sushi
+    group1: {
+      - baz: bas
+      + baz: bars
+        foo: bar
+      - nest: {
+            key: value
+        }
+      + nest: str
     }
-  + hobby: photography
-  - homepage: https://github.com/Ilya-Chu/frontend-project-46#readme
-  + is_married: true
-  + job: {
-        title: software engineer
-        company: Acme Inc.
-        salary: 100000
+  - group2: {
+        abc: 12345
+        deep: {
+            id: 45
+        }
     }
-    license: ISC
-  - main: src/index.js
-  - name: @hexlet/code
-  + name: Lucas
-  + pets: {
-        0: dog
-        1: cat
+  + group3: {
+        deep: {
+            id: {
+                number: 45
+            }
+        }
+        fee: 100500
     }
-    repository: {
-        type: git
-        url: git+ssh://git@github.com/Ilya-Chu/frontend-project-46.git
+    group4: {
+      - default: null
+      + default: 
+      - foo: 0
+      + foo: null
+      - isNested: false
+      + isNested: none
+      + key: false
+        nest: {
+          - bar: 
+          + bar: 0
+          - isNested: true
+        }
+      + someKey: true
+      - type: bas
+      + type: bar
     }
-  - scripts: {
-        test: echo "Error: no test specified" && exit 1
-    }
-  - type: module
-  - version: 1.0.0
+    language: js
 }

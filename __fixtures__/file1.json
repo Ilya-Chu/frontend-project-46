@@ -1,32 +1,38 @@
+
 {
-    "name": "@hexlet/code",
-    "type": "module",
-    "bin": {
-      "gendiff": "bin/gendiff.js"
-    },
-    "version": "1.0.0",
-    "description": "Hexlet ed project #2",
-    "main": "src/index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+ssh://git@github.com/Ilya-Chu/frontend-project-46.git"
-    },
-    "author": "Il_Ch",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/Ilya-Chu/frontend-project-46/issues"
-    },
-    "homepage": "https://github.com/Ilya-Chu/frontend-project-46#readme",
-    "dependencies": {
-      "commander": "^10.0.0",
-      "js-yaml": "^4.1.0",
-      "lodash": "^4.17.21"
-    },
-    "devDependencies": {
-      "eslint": "^8.38.0",
-      "jest": "^29.5.0"
+  "common": {
+    "setting1": "Value 1",
+    "setting2": 200,
+    "setting3": true,
+    "setting6": {
+      "key": "value",
+      "doge": {
+        "wow": "too much"
+      }
     }
-  }
+  },
+  "group1": {
+    "baz": "bas",
+    "foo": "bar",
+    "nest": {
+      "key": "value"
+    }
+  },
+  "group2": {
+    "abc": 12345,
+    "deep": {
+      "id": 45
+    }
+  },
+  "group4": {
+    "default": null,
+    "foo": 0,
+    "isNested": false,
+    "nest": {
+      "bar": "",
+      "isNested": true
+    },
+    "type": "bas"
+  },
+  "language": "js"
+}

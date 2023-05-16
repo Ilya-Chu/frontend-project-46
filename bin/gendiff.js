@@ -9,7 +9,7 @@ const program = new Command;
 program
     .version('1.0.0')
     .description('Compares two configuration files and shows a difference.')
-    .option('-f, --format <type>', 'output usage information')
+    .option('-f, --format <type>', 'output usage information', 'stylish')
     .argument('<filepath1>', 'path to file one')
     .argument('<filepath2>', 'path to file two')
     .action((filepath1, filepath2) => {

@@ -1,5 +1,6 @@
 import json from './json.js';
 import stylish from './stylish.js';
+import plain from './plain.js';
 
 const format = (data, formatName) => {
     switch (formatName) {
