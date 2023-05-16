@@ -13,8 +13,8 @@ program
     .argument('<filepath1>', 'path to file one')
     .argument('<filepath2>', 'path to file two')
     .action((filepath1, filepath2) => {
-        const option = program.opts();
-        console.log(gendiff(filepath1, filepath2, option.format));
+        const options = program.opts();
+        console.log(gendiff(filepath1, filepath2, options.format));
   });
 
-program.parse(process.argv);  
+program.parse(process.argv);

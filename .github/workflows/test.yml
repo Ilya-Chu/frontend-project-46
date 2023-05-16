@@ -5,8 +5,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: npm install
-    - name: Run tests
-      run: npx jest
+      - name: Test & publish code coverage
+        uses: paambaati/codeclimate-action@v4.0.0
+        env:
+          CC_TEST_REPORTER_ID: 063dfc12c8ecf11ccda0f9f18bdb3d188042024d0ad28fade397f34732c9854a
+        with:
+          coverageCommand: npm run coverage
+          debug: true
