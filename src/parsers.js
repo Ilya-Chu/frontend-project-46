@@ -10,6 +10,6 @@ const parse = (data, format) => {
     default:
       throw new Error(`${format} is not supported`);
   }
-}
+};
 
 export default parse;
