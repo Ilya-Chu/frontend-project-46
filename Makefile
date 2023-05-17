@@ -6,3 +6,5 @@ test:
 		npx jest
 test-coverage:
 		npx jest --coverage
+link:
+		sudo npm link
