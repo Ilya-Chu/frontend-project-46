@@ -12,6 +12,10 @@ const resultPlain = fs.readFileSync(
   path.resolve(process.cwd(), '__fixtures__/result_plain.txt'),
   'utf-8',
 );
+const resultJson = fs.readFileSync(
+  path.resolve(process.cwd(), '__fixtures__/result_json.txt'),
+  'utf-8',
+);
 
 test.each(fileExt)('testing different file options', (extension) => {
   const fileBefore = `__fixtures__/file1${extension}`;
@@ -22,4 +26,6 @@ test.each(fileExt)('testing different file options', (extension) => {
   expect(actual2).toEqual(resultPlain);
   const actual4 = genDiff(fileBefore, fileAfter);
   expect(actual4).toEqual(resultStylish);
+  const actual5 = genDiff(fileBefore, fileAfter, 'json');
+  expect(actual5).toEqual(resultJson);
 });
